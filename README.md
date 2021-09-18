@@ -10,6 +10,4 @@
 
 "go to localhost\formjs\client"
 
-"for more info you can contact me by email to juan.gasparino@gmail.com"
-
 "Regards"
