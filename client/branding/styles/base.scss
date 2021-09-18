@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    background-color: rgb(236, 236, 236);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    max-width: 900px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .logo {
+        background-image: url("../img/logo.png");
+        background-repeat: no-repeat;
+        height: 70px;
+        background-position: center;
+    }
+    .main-msg {
+        font-size: 1.03em;
+        color: black;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-input {
+            width: 40%;
+            height: 50px;
+            margin-bottom: 10px;
+            background-color: whitesmoke;
+            border: none;
+            border-bottom: 2px solid rgb(165, 165, 165);
+            &:hover{
+                box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+                transition: 1s;
+            }
+        }
+        .errorField {
+            border-bottom: 2px solid rgb(255, 0, 0);
+        }
+        &-button{
+            margin-top: 20px;
+            width: 50%;
+            height: 40px;
+            background-color: #032055;
+            border-radius: 5px;
+            font-size: 1.05em;
+            color: white;
+            border: none;
+            margin: 30px auto;
+            &:hover{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+                transition: 1s;
+            }
+        }
+    }
+
+    .errorMSG{
+        font-size: 1.03em;
+        font-weight: bold;
+        color: red;
+        align-self: center;
+    }
+
+    .successMSG{
+        font-size: 1.03em;
+        font-weight: bold;
+        color: #5bbb5f;
+        align-self: center;
+    }
+
+}
+
+@media(max-width: 640px) {
+    .app {
+        width: 90%;
+        .main-msg {
+            font-size: 0.9em;
+        }
+        .form{
+            flex-direction: column;
+            &-input {
+                width: 100%;
+            }
+            &-button{
+                width: 100%;
+            }
+        }
+        .errorMSG{
+            font-size: 0.9em;
+        }
+        .successMSG{
+            font-size: 0.9em;
+        }
+    }
+}

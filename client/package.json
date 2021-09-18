@@ -1,0 +1,29 @@
+{
+  "name": "formjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main",
+  "keywords": [
+    "gulp",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.0.0",
+    "npm": "^6.13.7"
+  }
+}
